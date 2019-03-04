@@ -1,0 +1,21 @@
+{
+  "name": "created-examples",
+  "version": "1.0.0",
+  "description": "This was created ony for example purposes",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.2"
+  }
+}

@@ -1,0 +1,131 @@
+/*= Reset CSS 
+============= */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+html, body {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px "Lato", Arial, sans-serif;
+  min-width: 100%;
+  min-height: 100%;
+  color: #666; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h2 {
+  text-align: center;
+  color: #2079df;
+  font-size: 28px;
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  position: relative;
+  line-height: 58px;
+  font-weight: 400; }
+
+h2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #2079df;
+  margin-left: -50px; }
+
+/*= Reset CSS End
+================= */
+/*= input focus effects css
+=========================== */
+:focus {
+  outline: none; }
+
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px; }
+
+/*Colors*/
+/*Font Sizes*/
+/*Breakpoints*/
+/*dimensions*/
+.form-element {
+  position: relative; }
+  .form-element .fancy-input {
+    font: 1em/1 "Roboto", sans-serif;
+    color: #4d4d4d;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    padding: 0.3em 0.7em; }
+    .form-element .fancy-input::placeholder {
+      font-size: .8em; }
+    .form-element .fancy-input ~ .fancy-input--border:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: #e31937;
+      transition: 0.2s;
+      transition-delay: 0.2s; }
+    .form-element .fancy-input ~ .fancy-input--border:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #e31937;
+      transition: 0.2s;
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: 0;
+      transition-delay: 0.6s; }
+    .form-element .fancy-input ~ .fancy-input--border i:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 0;
+      background-color: #e31937;
+      transition: 0.2s; }
+    .form-element .fancy-input ~ .fancy-input--border i:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 0;
+      background-color: #e31937;
+      transition: 0.2s;
+      left: auto;
+      right: 0;
+      top: auto;
+      bottom: 0;
+      transition-delay: 0.4s; }
+    .form-element .fancy-input:focus {
+      outline: none; }
+      .form-element .fancy-input:focus ~ .fancy-input--border:before {
+        width: 100%;
+        transition: 0.2s;
+        transition-delay: 0.6s; }
+      .form-element .fancy-input:focus ~ .fancy-input--border:after {
+        width: 100%;
+        transition: 0.2s;
+        transition-delay: 0.2s; }
+      .form-element .fancy-input:focus ~ .fancy-input--border i:before {
+        height: 100%;
+        transition: 0.2s; }
+      .form-element .fancy-input:focus ~ .fancy-input--border i:after {
+        height: 100%;
+        transition: 0.2s;
+        transition-delay: 0.4s; }
